@@ -1,0 +1,30 @@
+#include "triangle.h"
+#include "point.h"
+
+Triangle::Triangle(float x, float y , float z)
+{
+    this->x=x;
+    this->y=y;
+    this->z=z;
+}
+float distance(Point p, Point punkt){
+
+    return hypot(p.x()-punkt.x(),p.y()-punkt.y());
+
+
+}
+
+
+float Triangle::perimeter(){
+    
+   return distance(x,y); 
+    distance(y,z); 
+    distance(x,z); 
+}
+float Triangle::area(){
+    
+    float perimeter()/2;
+    return sqrt(p-distance)
+    
+    
+}

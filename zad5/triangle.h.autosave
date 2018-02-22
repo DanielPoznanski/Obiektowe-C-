@@ -1,0 +1,18 @@
+#ifndef TRIANGLE_H
+#define TRIANGLE_H
+
+#include "point.h"
+class Triangle
+{
+    Point x;
+    Point y;
+    Point z;
+    float distance(Point punkt , Point p);
+public:
+    Triangle(Point x, Point y, Point z);
+float perimeter();
+float area();
+
+};
+
+#endif // TRIANGLE_H
