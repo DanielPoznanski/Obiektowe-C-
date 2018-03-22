@@ -1,0 +1,15 @@
+#ifndef IMAGE_H
+#define IMAGE_H
+
+class Polygon;
+class Image
+{
+Polygon *arr[10];
+int polygons;
+public:
+    Image();
+    Image(Image &)=delete;
+    
+};
+
+#endif // IMAGE_H
